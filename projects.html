@@ -2,15 +2,38 @@
 <html>
 <head>
 	<title>Hello World</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-	<div class="display-project">
-		<div id="raspberry-drive">
-			<h4>Raspberry Drive - Autonomous Car</h4>
-			<p>Our Group took on a series of challenges that we previously had no idea how to accomplish.  All stemming from one idea: Build a car that drives itself (in 8-days).  Video Link</p>
-			<p>Learning Competencies include Asynchronous Python Threads.</p>
-			<p>Check out the blog post documenting the experience here.</p>
+	<div class="container jumbotron" class="header">
+		<h3>Will Farrell - Projects</h3>
+	</div>
+	<div class="row">
+		<div class="container col-sm-1">
+
+  		</div>
+  		<div class="container col-sm-10 well">
+			<div class="display-project">
+				<div id="raspberry-drive">
+					<h4>Raspberry Drive - Autonomous Car</h4>
+					<p>Raspberry Drive was completed as an 8-day final project at Dev Bootcamp.  Our group of four took on the idea and challenge of building a car that will drive itself.  None of us had any experience with any equipment needed, and the guarantee of learning something is what drove us.  
+
+					We wired one Raspberry Pi into a 8$ Remote Control Car from Target.  Another Raspberry Pi we stuck a camera on and put on top of the car.  Our Server(aka my computer) would SSH into the Camera Pi and start taking pictures.  Then it would SSH into the Controller Pi and setup a open socket to listen to commands.  Both of these processes were run in Python threads and as background jobs so the actual driving could take place. 
+
+					Once both pieces were ready, the driving could begin.  The server SCPs into the Car and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that is continually listening.  
+
+					I learned a ton!  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p>
+					<p>You didn't visit the page to hear me talk, check out the video. </p>
+					<img src="images/car.jpg">
+					<img src="images/track.jpg">
+
+					<p>Check out the code: <a href="https://github.com/farrellw/RaspberryDrive">Github Raspberry Drive</a> </p>
+				</div>
+			</div>
 		</div>
+		<div class="container col-sm-1">
+
+  		</div>
 	</div>
 	<div>
 		<ul>Check out a different project
