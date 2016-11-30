@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello World</title>
+	<title>Will Farrell Projects</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
@@ -16,18 +16,27 @@
 			<div class="display-project">
 				<div id="raspberry-drive">
 					<h4>Raspberry Drive - Autonomous Car</h4>
-					<p>Raspberry Drive was completed as an 8-day final project at Dev Bootcamp.  Our group of four took on the idea and challenge of building a car that will drive itself.  None of us had any experience with any equipment needed, and the guarantee of learning something is what drove us.  
+					<p>Raspberry Drive was completed as an 8-day final project at Dev Bootcamp.  Our group of four had zero experience working with any of the equipment needed, but we had an idea:  Build a car that can drive itself.  The challenge was a gaurantee we would learn something totally knew, and the challenges of the project are what drove us (and eventually the car). 
 
-					We wired one Raspberry Pi into a 8$ Remote Control Car from Target.  Another Raspberry Pi we stuck a camera on and put on top of the car.  Our Server(aka my computer) would SSH into the Camera Pi and start taking pictures.  Then it would SSH into the Controller Pi and setup a open socket to listen to commands.  Both of these processes were run in Python threads and as background jobs so the actual driving could take place. 
+					We wired one Raspberry Pi into a 8$ Remote Control Car from Target. <img src="images/control-pi.jpg" class="img-thumbnail float-xs-right"> 
+					Another Raspberry Pi we stuck a camera on and put on top of the car.  Our Server(aka my computer) would SSH into the Camera Pi and start taking pictures.  Then it would SSH into the Controller Pi and setup a open socket to listen to commands.  Both of these processes were run in Python threads and as background jobs so the actual driving could take place. 
+					<br>
+					<span><img src="images/communication-1.png" class="img-thumbnail float-xs-left" max-width=48%>
+					<img src="images/communication-2.png" class="img-thumbnail float-xs-right" max-width=48%> </span><br>
 
 					Once both pieces were ready, the driving could begin.  The server SCPs into the Car and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that is continually listening.  
 
+					<img src="images/image-analysis.jpg">
+
 					I learned a ton!  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p>
 					<p>You didn't visit the page to hear me talk, check out the video. </p>
-					<img src="images/car.jpg">
-					<img src="images/track.jpg">
+					<img src="images/endcar.jpg" class="img-thumbnail float-xs-left">
+					<img src="images/course.jpg" class="img-thumbnail float-xs-right">
 
-					<p>Check out the code: <a href="https://github.com/farrellw/RaspberryDrive">Github Raspberry Drive</a> </p>
+					<div class="embed-responsive embed-responsive-4by3">
+						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3zaptrMLBws?start=0" frameborder="0" allowfullscreen></iframe>
+					</div>
+					<p>**************** <a href="https://github.com/farrellw/RaspberryDrive">Check out the code on Github</a> **************</p>
 				</div>
 			</div>
 		</div>
@@ -44,6 +53,5 @@
 			<li>Current Project </li>
 		</ul>
 	</div>
-	<p>Hello World</p>
 </body>
 </html>
