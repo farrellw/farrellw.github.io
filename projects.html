@@ -15,23 +15,54 @@
   		<div class="container col-sm-10 well">
 			<div class="display-project">
 				<div id="raspberry-drive">
-					<h4>Raspberry Drive - Autonomous Car</h4>
-					<p>Raspberry Drive was completed as an 8-day final project at Dev Bootcamp.  Our group of four had zero experience working with any of the equipment needed, but we had an idea:  Build a car that can drive itself.  The challenge was a gaurantee we would learn something totally knew, and the challenges of the project are what drove us (and eventually the car). 
+					<div class="row">
+						<div class="container col-sm-8 well">
+							<h4>Raspberry Drive - Autonomous Car</h4>
+							<p>Raspberry Drive was completed as an 8-day final project at Dev Bootcamp.  Our group of four had zero experience working with any of the equipment needed, but we had an idea:  <strong> Build a car that can drive itself</strong>.<br><br>  The unique challenge was a gaurantee that our team would learn something totally new.  Continous challenges throughout the project are what drove us (and eventually the car).<br><br> 
 
-					First step, buy three eight dollar RC cars from Target.  We broke apart all three cars, trying to figure out the best way to communicate between a Raspberry Pi and the car.  Our team ended up wiring one Raspberry Pi into the circuit-board of the RC cars controller. <img src="images/control-pi.jpg" class="img-thumbnail float-xs-right" width=30% display="inline-block"> <br>
-					Then we took another Raspberry Pi, attached it to a camera on and quite literally taped it to the top of the car.  Our Server(aka my computer) would SSH into the Camera Pi and start taking pictures.  Then it would SSH into the Controller Pi and setup a open socket to listen to commands.  Both of these processes were run in Python threads and as background jobs so the actual driving could take place. 
+							<strong>Challenge 1: Where to start?</strong><br>
+							Answer: Research everything, buy three cheap RC cars from the local Target, start breaking them apart and looking inside.
+
+							<br><br> 
+
+							<strong>Challenge 2: How to get get the Raspberry Pi to turn the wheels on the car. </strong><br>
+							Answer: Mimicing the radio signal?  We figured out the frequency but it was unreliable.  Wire straight into the motor?  You lose your power source. 
+
+							Our team ended up wiring one Raspberry Pi into the circuit-board of the RC cars controller, pic shown.  We completed the circuits with transistors which would open and closed based on a tiny bit of electricity flowing out of the Raspberry Pi's ports. <br>
+							
+							<br><br> 
+
+							
+						</div>
+						<div class="container col-sm-4 well">
+							<img src="images/control-pi.jpg" class="img-thumbnail float-xs-right" width=90% display="inline-block"> 
+						</div>
+					</div>
 					<br>
-					<span><img src="images/communication-1.png" class="img-thumbnail float-xs-left" width=35% >
-					<img src="images/communication-2.png" class="img-thumbnail float-xs-right" width=35% padding=10px> </span><br>
+					<div class="row">
+						<div class="container col-sm-12">
+							<strong>Challenge 3: Everything works.  Nothing works together.</strong>  <br>Then we took another Raspberry Pi, attached it to a camera on and quite literally taped it to the top of the car.  Our Server(aka my computer) would SSH into the Camera Pi and start taking pictures.  Then it would SSH into the Controller Pi and setup a open socket to listen to commands.  Both of these processes were run in Python threads and as background jobs so the actual driving could take place. </p>
+						</div>
+					<div>
+					<div class="row">
+						<div class="container col-sm-6 well">
+							<img src="images/communication-1.png" class="img-thumbnail float-xs-left" width=100% >
+						</div>
+						<div class="container col-sm-6 well">
+							<img src="images/communication-2.png" class="img-thumbnail float-xs-right" width=100% padding=10px> 
+						</div>
+					</div>
+					<br>
 
-					Once both pieces were ready, the driving could begin.  The server SCPs into the Car and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that is continually listening.  
-
-					<img src="images/image-analysis.jpg" width=40%>
+					<p>Once both pieces were ready, the driving could begin.  The server SCPs into the Car and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that is continually listening. </p> 
+					<img src="images/image-before.jpg" class="img-thumbnail float-xs-left" width=40%>
+					<img src="images/image-analysis.png" class="img-thumbnail float-xs-right" width=40%>
+					<br>
 
 					I learned a ton!  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p>
 					<p>You didn't visit the page to hear me talk, check out the video. </p>
 					<img src="images/endcar.jpg" class="img-thumbnail float-xs-left" width=40%>
-					<img src="images/course.jpg" class="img-thumbnail float-xs-right" width=40%>
+					<img src="images/course.JPG" class="img-thumbnail float-xs-right" width=40%>
 
 					<div class="embed-responsive embed-responsive-4by3">
 						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3zaptrMLBws?start=0" frameborder="0" allowfullscreen></iframe>
