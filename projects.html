@@ -28,20 +28,19 @@
 							<strong>Challenge 2: How to get get the Raspberry Pi to turn the wheels on the car. </strong><br>
 							Answer: Mimicing the radio signal?  We figured out the frequency but it was unreliable.  Wire straight into the motor?  You lose your power source. 
 
-							Our team ended up wiring one Raspberry Pi into the circuit-board of the RC cars controller, pic shown.  We completed the circuits with transistors which would open and closed based on a tiny bit of electricity flowing out of the Raspberry Pi's ports. <br>
+							Our team ended up wiring one Raspberry Pi into the circuit-board of the RC car's controller, pic shown.  We completed the circuits with transistors which would open and closed based on a tiny bit of electricity flowing out of the Raspberry Pi's ports (which we could open). <br><br>  Then we took a separate Raspberry Pi, attached it to a camera and quite literally masking taped it to the top of the car.  
 							
 							<br><br> 
-
-							
 						</div>
 						<div class="container col-sm-4 well">
-							<img src="images/control-pi.jpg" class="img-thumbnail float-xs-right" width=90% display="inline-block"> 
+							<img src="images/control-pi.jpg" class="img-thumbnail float-xs-top" width=90% display="inline-block"> 
+							<img src="images/car-pi.jpg" class="img-thumbnail float-xs-bottom" width=90% display="inline-block"> 
 						</div>
 					</div>
 					<br>
 					<div class="row">
 						<div class="container col-sm-12">
-							<strong>Challenge 3: Everything works.  Nothing works together.</strong>  <br>Then we took another Raspberry Pi, attached it to a camera on and quite literally taped it to the top of the car.  Our Server(aka my computer) would SSH into the Camera Pi and start taking pictures.  Then it would SSH into the Controller Pi and setup a open socket to listen to commands.  Both of these processes were run in Python threads and as background jobs so the actual driving could take place. </p>
+							<strong>Challenge 3: Everything works.  Nothing works together.</strong>  <br>One of our Pi's can tell the car to spin its wheels.  The other Pi can run a script that continually takes pictures.  Our Server(aka my computer) SSH's into the Controller Pi and says "open a socket, listen for my command".  Then it SSH's into the Camera Pi and says, "Don't worry about anything else.  Just start taking pictures every 1/10 second". Both of these processes were run in Python threads and as background jobs so the image analysis could take place. </p>
 						</div>
 					<div>
 					<div class="row">
@@ -53,17 +52,37 @@
 						</div>
 					</div>
 					<br>
-
-					<p>Once both pieces were ready, the driving could begin.  The server SCPs into the Car and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that is continually listening. </p> 
-					<img src="images/image-before.jpg" class="img-thumbnail float-xs-left" width=40%>
-					<img src="images/image-analysis.png" class="img-thumbnail float-xs-right" width=40%>
-					<br>
-
-					I learned a ton!  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p>
-					<p>You didn't visit the page to hear me talk, check out the video. </p>
-					<img src="images/endcar.jpg" class="img-thumbnail float-xs-left" width=40%>
-					<img src="images/course.JPG" class="img-thumbnail float-xs-right" width=40%>
-
+					<div class="row">
+						<div class="container col-sm-12">
+							Once all systems were up and running, the driving could begin.  The main-server SCPs into the Camera-Pi and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that has been listening for instrucitons the whole time. </p> 
+						</div>
+					</div>
+					<div class="row">
+						<div class="container col-sm-12">
+							<p><strong>Challenge 4: How do we find obstacles?</strong>  <br>Check out the image recognition code.  Essentially the car could isolate colors/shapes and steer depending on what it saw.  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p><br>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container col-sm-6">
+							<img src="images/image-before.jpg" class="img-thumbnail float-xs-left" width=90%>
+						</div>
+						<div class="container col-sm-6">
+							<img src="images/image-analysis.png" class="img-thumbnail float-xs-right" width=90%>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container col-sm-12">
+							<p><strong>Challenge 5: Build a sweet course that the car will enjoy driving around.  </strong>  Check out the video at the bottom. </p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="container col-sm-6">
+							<img src="images/endcar.jpg" class="img-thumbnail" width=80%>
+						</div>
+						<div class="container col-sm-6">
+							<img src="images/course.JPG" class="img-thumbnail" width=80%>
+						</div>
+					</div>
 					<div class="embed-responsive embed-responsive-4by3">
 						<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3zaptrMLBws?start=0" frameborder="0" allowfullscreen></iframe>
 					</div>
