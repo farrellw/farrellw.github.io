@@ -15,14 +15,16 @@ $tertiary-color: #F15E57;*/
 	text-transform: uppercase;
 }
 
-body {
-	background-color: #66b3ff
+.project {
+	background-color: #66b3ff;
+	border-color: #66b3ff;
+	font-family:georgia,serif;
+ 	color:#381704;
+ 	font-size:18px;
+ 	font-weight:normal;
+ 	line-height:150%;
 }
 
 .bottom {
 	background-color: #F15E57;
 }
-
-/*.well {
-	background-color: #66b3ff
-}*/
