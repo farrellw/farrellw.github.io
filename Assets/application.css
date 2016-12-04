@@ -1,0 +1,28 @@
+
+/*$primary-color: #0C547D;
+$secondary-color: #FFF;
+$tertiary-color: #F15E57;*/
+
+.top {
+	background-color: #F15E57;
+	color: #ffffff; 
+	font-family: 'Raleway',sans-serif; 
+	font-size: 62px; 
+	font-weight: 800; 
+	line-height: 72px; 
+	margin: 0 0 24px; 
+	text-align: center; 
+	text-transform: uppercase;
+}
+
+body {
+	background-color: #66b3ff
+}
+
+.bottom {
+	background-color: #F15E57;
+}
+
+/*.well {
+	background-color: #66b3ff
+}*/
