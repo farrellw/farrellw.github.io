@@ -26,6 +26,27 @@ $tertiary-color: #F15E57;*/
  	line-height:150%;
 }
 
+
+
+
 .bottom {
 	background-color: #F15E57;
+	text-align: center; 
+}
+
+.navbar-nav li {
+	text-align: center;
+	height: 400%;
+}
+.nav a {
+	background-color: #f44336;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav .nav-link:hover {
+    background-color: yellow;
 }
