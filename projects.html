@@ -42,11 +42,11 @@
 							<p><strong>Challenge 3: Everything works.  Nothing works together.</strong>  <br>One of our Pi's can tell the car to spin its wheels.  The other Pi can run a script that continually takes pictures.  Our Server(aka my computer) SSH's into the Controller Pi and says "open a socket, listen for my command".  Then it SSH's into the Camera Pi and says, "Don't worry about anything else.  Just start taking pictures every 1/10 second". Both of these processes were run in Python threads and as background jobs so the image analysis could take place. </p>
 						</div>
 					</div>
-					<div class="row">
-						<div class="container col-sm-6 well project">
+					<div class="row top">
+						<div class="container col-sm-6 well top">
 							<img src="images/communication-1.png" class="img-thumbnail float-xs-left" width=90% >
 						</div>
-						<div class="container col-sm-6 well project">
+						<div class="container col-sm-6 well top">
 							<img src="images/communication-2.png" class="img-thumbnail float-xs-right" width=90%> 
 						</div>
 					</div>
@@ -54,14 +54,14 @@
 						<div class="container col-sm-12 well project">
 							<p> Once all systems were up and running, the driving could begin.  The main-server SCPs into the Camera-Pi and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that has been listening for instrucitons the whole time. </p> <br><br>
 
-							<p><strong>Challenge 4: How do we find obstacles?</strong>  <br>Check out the image recognition code.  Essentially the car could isolate colors/shapes and steer depending on what it saw.  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p><br>
+							<p><strong>Challenge 4: How do we find obstacles?</strong>  <br>Check out the image recognition code.  Essentially the car could isolate colors/shapes and steer depending on what it saw.  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p>
 						</div>
 					</div>
-					<div class="row">
-						<div class="container col-sm-6 well project">
+					<div class="row top">
+						<div class="container col-sm-6 well top">
 							<img src="images/image-before.jpg" class="img-thumbnail float-xs-left" width=90%>
 						</div>
-						<div class="container col-sm-6 project">
+						<div class="container col-sm-6 well top">
 							<img src="images/image-analysis.png" class="img-thumbnail float-xs-right" width=90%>
 						</div>
 					</div>
