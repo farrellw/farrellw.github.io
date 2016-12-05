@@ -3,29 +3,77 @@
 $secondary-color: #FFF;
 $tertiary-color: #F15E57;*/
 
-.top {
-	background-color: #F15E57;
-	border-color: #F15E57;
-	color: #ffffff; 
-	font-family: 'Raleway',sans-serif; 
-	font-size: 62px; 
-	font-weight: 800; 
-	line-height: 72px;
-	margin: 0 0 24px; 
+.heading {
+	height: 250px;
 	text-align: center; 
 	text-transform: uppercase;
 }
 
+.top {
+	background-color: #F15E57;
+	border-color: #F15E57;
+	color: #ffffff; 
+	font-size: 68px; 
+	font-weight: 800; 
+	line-height: 72px;
+	margin: 0 0 24px; 
+	
+}
+
+.index-nav {
+	height: 250px;
+}
+.top h1 {
+	font-family: 'Corben', Georgia, Times, serif;
+	font-size: 40px;
+	line-height: 55px;
+}
+
 .project {
-	background-color: #66b3ff;
-	border-color: #66b3ff;
-	font-family: 'Muli', sans-serif
- 	color:#381704;
+	background-color: #0C547D;;
+	border-color: #0C547D;;
+	border: none;
+	color: white;
+	font-family: 'Muli', sans-serif;
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
 }
 
+.page {
+	background-color: #0C547D;;
+	border-color: #0C547D;;
+}
+
+.body {
+	background-color: #0C547D;;
+	border-color: #0C547D;;
+	border: none;
+	color: #333333;
+	font-family: 'Muli', sans-serif;
+	font-size: 18px;
+	color: white;
+	font-weight:normal;
+ 	line-height:150%;
+}
+
 .bottom {
 	background-color: #F15E57;
+	text-align: center; 
+}
+
+.navbar-nav li {
+	text-align: center;
+	height: 400%;
+}
+.nav a {
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav .nav-link:hover {
+    background-color: yellow;
 }
