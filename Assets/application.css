@@ -3,18 +3,21 @@
 $secondary-color: #FFF;
 $tertiary-color: #F15E57;*/
 
+.heading {
+	height: 250px;
+	text-align: center; 
+	text-transform: uppercase;
+}
+
 .top {
 	background-color: #F15E57;
 	border-color: #F15E57;
 	color: #ffffff; 
-	/*font-family: 'Raleway',sans-serif; */
 	font-size: 68px; 
 	font-weight: 800; 
 	line-height: 72px;
 	margin: 0 0 24px; 
-	text-align: center; 
-	text-transform: uppercase;
-	height: 250px;
+	
 }
 
 .index-nav {
@@ -27,10 +30,11 @@ $tertiary-color: #F15E57;*/
 }
 
 .project {
-	background-color: #66b3ff;
-	border-color: #66b3ff;
+	background-color: #0C547D;;
+	border-color: #0C547D;;
+	border: none;
+	color: white;
 	font-family: 'Muli', sans-serif;
- 	color:#381704;
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
@@ -40,6 +44,7 @@ $tertiary-color: #F15E57;*/
 	background-color: #0C547D;;
 	border-color: #0C547D;;
 }
+
 .body {
 	background-color: #0C547D;;
 	border-color: #0C547D;;
@@ -62,7 +67,6 @@ $tertiary-color: #F15E57;*/
 	height: 400%;
 }
 .nav a {
-	background-color: #f44336;
     color: black;
     padding: 14px 25px;
     text-align: center;
