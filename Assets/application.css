@@ -40,6 +40,15 @@ h1 {
  	line-height:150%;
 }
 
+.summary-holder {
+	background: linear-gradient(#58a, #fb3);
+	color: linear-gradient(#000000, #FFFAF0);
+	font-family: 'Muli', sans-serif;
+ 	font-size:18px;
+ 	font-weight:normal;
+ 	line-height:150%;
+}
+
 .project-description-top h4 {
 	font-family: 'Muli', sans-serif;
  	font-size:24px;
