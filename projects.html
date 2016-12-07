@@ -8,117 +8,106 @@
 	<link rel="stylesheet" href="assets/application.css">
 	<link rel="stylesheet" href="Assets/application.css">
 </head>
-<body class='page project-page'>
-	<div class='project-page'>
-		<div class="row">
-			<div class="container jumbotron heading" >
-				<h1 class="heading">Will Farrell <br><br> Projects</h1>
-			</div>
+<body class='page'>
+	<div class="row heading">
+		<div class="container" >
+			<h1>Will Farrell Projects</h1>
 		</div>
-		<div class="row project">
-			<div class="container col-sm-1">
-			</div>
-	  		<div class="container-fluid col-sm-10 project">
-				<div class="display-project">
-					<div id="raspberry-drive">
-						<div class="row">
-							<div class="container col-sm-8 well project">
-								<h4>Raspberry Drive - Autonomous Car</h4>
-								<p>Raspberry Drive was completed as an 8-day final project at Dev Bootcamp.  Our group of four had zero experience working with any of the equipment needed, but we had an idea:  <strong> Build a car that can drive itself</strong>.<br><br>  The unique challenge was a gaurantee that our team would learn something totally new.  Continous challenges throughout the project are what drove us (and eventually the car).<br><br> 
+	</div>
+	<div class="row project-description-top">
+		<div class="col-xs-7 col-xs-offset-1">
+			<h4>Raspberry Drive - Autonomous Car</h4>
+			<p>Raspberry Drive was completed in a 8-day timespan. Our group of four had zero experience working with any of the equipment needed, but we had an idea:  <strong> Build a car that can drive itself</strong>.<br><br>  The unique challenge was a gaurantee that our team would learn something totally new.  Challenges throughout the project are what drove us (and eventually the car!).<br><br> 
 
-								<strong>Challenge 1: Where to start?</strong><br>
-								Answer: Research everything, buy three cheap RC cars from the local Target, start breaking them apart and looking inside.
+			<strong>Challenge 1: Where to start?</strong><br>
+			Research everything.  Buy three cheap RC cars from the local Target, start ripping them apart and looking inside.
 
-								<br><br> 
+			<br><br> 
 
-								<strong>Challenge 2: How to get get the Raspberry Pi to turn the wheels on the car. </strong><br>
-								Answer: Mimicing the radio signal?  We figured out the frequency but it was unreliable.  Wire straight into the motor?  You lose your power source. 
+			<strong>Challenge 2: How to get get the Raspberry Pi to turn the wheels on the car. </strong><br>
+			Answer: Mimicing the radio signal?  We figured out the frequency but it was unreliable.  Wire straight into the motor?  You lose your power source. 
 
-								Our team ended up wiring one Raspberry Pi into the circuit-board of the RC car's controller, pic shown.  We completed the circuits with transistors which would open and closed based on a tiny bit of electricity flowing out of the Raspberry Pi's ports (which we could open). <br><br>  Then we took a separate Raspberry Pi, attached it to a camera and quite literally masking taped it to the top of the car.  
-								</p>
-								<br><br> 
-							</div>
-							<div class="container col-sm-4 well project">
-								<img src="images/control-pi-2.jpg" class="img-responsive float-xs-top" max-height=40% width=90% display="inline-block"> 
-								<img src="images/car-pi.JPG" class="img-thumbnail float-xs-bottom" width=100% display="inline-block"> 
-							</div>
-						</div>
-						<div class="row">
-							<div class="container col-sm-12 well project">
-								<p><strong>Challenge 3: Everything works.  Nothing works together.</strong>  <br>One of our Pi's can tell the car to spin its wheels.  The other Pi can run a script that continually takes pictures.  Our Server(aka my computer) SSH's into the Controller Pi and says "open a socket, listen for my command".  Then it SSH's into the Camera Pi and says, "Don't worry about anything else.  Just start taking pictures every 1/10 second". Both of these processes were run in Python threads and as background jobs so the image analysis could take place. </p>
-							</div>
-						</div>
-						<div class="row top well project-page">
-							<div class="container col-sm-6 project-page">
-								<img src="images/communication-1.png" class="img-thumbnail float-xs-left" width=90% >
-							</div>
-							<div class="container col-sm-6 project-page">
-								<img src="images/communication-2.png" class="img-thumbnail float-xs-right" width=90%> 
-							</div>
-						</div>
-						<div class="row">
-							<div class="container col-sm-12 well project">
-								<p> Once all systems were up and running, the driving could begin.  The main-server SCPs into the Camera-Pi and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that has been listening for instrucitons the whole time. </p> <br><br>
+			Our team ended up wiring from ports on the Raspberry Pi into the circuit-board of the RC car's controller, pic shown.  The circuit was completed with transistors which would open and closed based on a tiny bit of electricity flowing out of the Raspberry Pi's ports (which we could open). <br><br>  Then we took a separate Raspberry Pi, stuck a camera to it and quite literally masking taped it to the top of the car.  
+			</p>
+			<br><br> 
 
-								<p><strong>Challenge 4: How do we find obstacles?</strong>  <br>Check out the image recognition code.  Essentially the car could isolate colors/shapes and steer depending on what it saw.  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, go ahead and contact! </p>
-							</div>
-						</div>
-						<div class="row image-holder well project-page">
-							<div class="col-sm-6 project-page">
-								<img src="images/image-before.jpg" class="img-fluid" height=auto max-width=100%>
-							</div>
-							<div class="col-sm-6 project-page">
-								<img src="images/image-analysis.png" class="img-fluid" height=auto max-width=100%>
-							</div>
-						</div>
-						<div class="row">
-							<div class="container col-sm-12 well project">
-								<p><strong>Challenge 5: Build a sweet course that the car will enjoy driving around.  </strong>  Check out the video at the bottom. </p>
-							</div>
-						</div>
-						<div class="row project">
-							<div class="container col-sm-6 well project">
-								<img src="images/endcar.jpg" class="img-thumbnail" width=100%>
-							</div>
-							<div class="container col-sm-6 well project">
-								<img src="images/course.JPG" class="img-thumbnail" width=100%>
-							</div>
-						</div>
-						<div class="embed-responsive embed-responsive-4by3">
-							<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3zaptrMLBws?start=0" frameborder="0" allowfullscreen></iframe>
-						</div>
-					</div>
+			<p><strong>Challenge 3: Everything works.  Nothing works together.</strong>  <br>One of our Pi's can tell the car to spin its wheels.  The other Pi can run a script that continually takes pictures.  How to get them talking??<br><br>Our Server(aka my computer) SSH's into the Controller Pi and says "open a socket, listen for my command".  Then it SSH's into the Camera Pi and says, "Don't worry about anything else.  Just start taking pictures every 1/10 second". Both of these processes were run asynchronously in Python threads and as background jobs so the image analysis could take place. </p>
+		</div>
+		<div class="col-sm-3 col-sm-offset-0 col-xs-10 col-xs-offset-1 project-images">
+			<img src="images/control-pi-2.jpg" class="img-responsive top-project-image" width=90%>
+			<img src="images/car-pi.JPG" class="img-responsive top-project-image" width=100%> 
+		</div>
+	</div>
+	<div class="row project-description-bottom">
+		<div class="col-xs-10 col-xs-offset-1">
+			<div class="row top well project-images">
+				<div class="container col-sm-6 project-image">
+					<img src="images/communication-1.png" class="img-thumbnail float-xs-left" width=90% >
+				</div>
+				<div class="container col-sm-6 project-image">
+					<img src="images/communication-2.png" class="img-thumbnail float-xs-right" width=90%> 
 				</div>
 			</div>
-			<div class="container col-sm-1">
+			<div class="row">
+				<div class="container col-xs-12">
+					<p> Once all systems were up and running, the driving could begin.  The main-server SCPs into the Camera-Pi and grabs the most recent picture.  When it has the picture, it analyzes the picture using custom OpenCV logic and determines a driving command based on what it sees.  Next, the server sends the command to the controller Pi over the open port that has been listening for instrucitons the whole time. </p> <br><br>
+
+					<p><strong>Challenge 4: Our car can drive!!! But it keeps running into walls. </strong>  <br>Check out the image recognition code. Essentially the car could isolate groupings of colors and shapes and our logic would steer depending on what it saw.</p>
+				</div>
+			</div>
+			<div class="row well project-images">
+				<div class="col-sm-6 project-image">
+					<img src="images/image-before.jpg" class="img-fluid" height=auto max-width=100%>
+				</div>
+				<div class="col-sm-6 project-image">
+					<img src="images/image-analysis.png" class="img-fluid" height=auto max-width=100%>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container col-sm-12">
+					<p><strong>Challenge 5: Build a sweet course that the car will enjoy driving around.  </strong>  Check out the video at the bottom.  Anyone wanting to check out Raspberry Pi, Autonomous Cars, Image Recognition software, Python asynchronous threads, don't hesitate to contact and steal from our code! </p>
+				</div>
+			</div>
+			<div class="row well project-images">
+				<div class="container col-sm-6 project-image">
+					<img src="images/endcar.jpg" class="img-thumbnail" width=100%>
+				</div>
+				<div class="container col-sm-6 project-image">
+					<img src="images/course.JPG" class="img-thumbnail" width=100%>
+				</div>
+			</div>
+			<div class="embed-responsive embed-responsive-4by3 project-images">
+				<iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/3zaptrMLBws?start=0" frameborder="0" allowfullscreen></iframe>
 			</div>
 		</div>
-		<div class="row bottom">
-			<div class="container col-sm-12">
-				<nav class="navbar navbar-dark bg-primary text-center">
-				  <ul class="nav navbar-nav">
-				    <li class="nav-item active">
-				      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="mailto:farrell.will.g@gmail.com">Email Will</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="https://www.linkedin.com/in/william-farrell-programmer">LinkedIn</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="https://github.com/farrellw">GitHub</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="Will-Farrell-Resume.pdf">Resume</a>
-				    </li>
-				    <li class="nav-item">
-				      <a class="nav-link" href="https://github.com/farrellw/RaspberryDrive">Check out the Car's Code</a>
-				    </li>
-				  </ul>
-				</nav>
-	  		</div>
-	  	</div>
-	  </div>
+		<div class="container col-sm-1">
+		</div>
+	</div>
+	<div class="row">
+		<div class="container col-sm-12">
+			<nav class="navbar navbar-dark navbar-fixed-bottom bg-primary text-center">
+			  <ul class="nav navbar-nav">
+			    <li class="nav-item active">
+			      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="mailto:farrell.will.g@gmail.com">Email Will</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="https://www.linkedin.com/in/william-farrell-programmer">LinkedIn</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="https://github.com/farrellw">GitHub</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="Will-Farrell-Resume.pdf">Resume</a>
+			    </li>
+			    <li class="nav-item">
+			      <a class="nav-link" href="https://github.com/farrellw/RaspberryDrive">Check out the Car's Code</a>
+			    </li>
+			  </ul>
+			</nav>
+  		</div>
+  	</div>
 </body>
 </html>

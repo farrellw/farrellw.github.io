@@ -4,7 +4,7 @@ $secondary-color: #FFF;
 $tertiary-color: #F15E57;*/
 html {
 	height: 100%;
-	background-color: #0C547D;
+	background-color: #58a;
 	border-color: #0C547D;
 }
 
@@ -16,33 +16,48 @@ body {
 	height: 100%
 }
 
-.project-page {
-	background-color: #F15E57;
-	border-color: #F15E57;
-}
-.image-holder {
-	text-align: center;
-	/*position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);*/
-}
 .heading {
+	background: linear-gradient(#fb3 35%, #58a 65%);
+	/*background: repeating-linear-gradient(45deg, #fb3, #58a 30px%);*/
 	height: 40%;
-	text-align: center; 
-	text-transform: uppercase;
-	background-color: #F15E57;
-	border-color: #F15E57;
-	color: #ffffff; 
+	color: #ffffff;
 	font-size: 68px; 
 	font-weight: 800; 
 	line-height: 72px;
-	margin: 0 0 24px; 
 }
 
-.index-nav {
-	margin: auto;
-	text-align: center;
+h1 {
+	color: #58a;
 }
+
+.project-description-top {
+	background: linear-gradient(#58a, #fb3);
+	border: none;
+	color: linear-gradient(#000000, #FFFAF0);
+	font-family: 'Muli', sans-serif;
+ 	font-size:18px;
+ 	font-weight:normal;
+ 	line-height:150%;
+}
+
+.project-description-top h4 {
+	font-family: 'Muli', sans-serif;
+ 	font-size:24px;
+ 	font-weight: bold;
+ 	line-height:150%;
+
+}
+
+.project-description-bottom {
+	background: linear-gradient(#fb3, #58a);
+	color: linear-gradient(	#000000, #FFFAF0);
+	font-family: 'Muli', sans-serif;
+ 	font-size:18px;
+ 	font-weight:normal;
+ 	line-height:150%;
+}
+
+
 
 .heading h1 {
 	font-family: 'Corben', Georgia, Times, serif;
@@ -51,7 +66,7 @@ body {
 }
 
 .project {
-	background-color: #0C547D;;
+	background-color: #0C547D;
 	border-color: #0C547D;;
 	border: none;
 	color: black;
@@ -59,6 +74,19 @@ body {
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
+}
+
+.project-images {
+	border: 15px solid hsla(0,0%, 100%, .5);
+	background: #F15E57;
+	background-clip: padding-box;
+	height: 100%;
+}
+
+.top-project-image {
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
 }
 
 .page {
@@ -85,14 +113,25 @@ body {
 .navbar-nav li {
 	text-align: center;
 	height: 100%;
+	padding: 6px 16px;
+    border: 1px solid #446d88;
+    /*background: #58a linear-gradient(#77a0bb, #58a);*/
+    border-radius: 4px;
+    box-shadow: 0 1px 5px gray;
+    color: white;
+    text-shadow: 0 -1px 1px #335166;
+    line-height: 1.5;
 }
 
 .nav a {
-    color: black;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
+    padding: 6px 16px;
+    border: 1px solid #446d88;
+    background: #58a linear-gradient(#77a0bb, #58a);
+    border-radius: 4px;
+    box-shadow: 0 1px 5px gray;
+    color: white;
 }
+
 .summary-holder {
 	height: 100%;
 	text-align: center;
@@ -113,4 +152,9 @@ body {
 	max-width: 200px;
     height: auto;
 	border-radius: 50px;
+}
+
+.index-nav {
+	margin: auto;
+	text-align: center;
 }
