@@ -18,7 +18,6 @@ body {
 
 .heading {
 	background: linear-gradient(#fb3 35%, #58a 65%);
-	/*background: repeating-linear-gradient(45deg, #fb3, #58a 30px%);*/
 	height: 40%;
 	color: #ffffff;
 	font-size: 68px; 
@@ -86,14 +85,96 @@ h1 {
  	line-height:150%;
 }
 
-
-
 .heading h1 {
 	font-family: 'Patua One', cursive;
 	font-size: 40px;
 	line-height: 55px;
 }
 
+.proficiency-holder {
+	background: white;
+	font-family:'Open Sans', sans-serif;
+ 	font-size: 18px;
+ 	font-weight: normal;
+ 	line-height:100%;
+ 	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.proficiency-holder h2 {
+	font-family: 'Patua One', cursive;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.proficiencies-holder {
+	background: white;
+	text-align: center;
+	height: 100%;
+}
+
+#proficiencies {
+	margin: auto;
+	line-height: 100%;
+	/*border-radius: 50px;*/
+}
+
+#proficiencies i {
+    font-size: 50px;
+    display: inline-block;
+    width: 70px;
+    height: 100px;
+    margin-bottom: 70px;
+    margin-left: -5px;
+    padding: 10px;
+}
+
+#proficiencies img {
+    width: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -30px;
+}
+
+.contact-holder {
+	height: 100%;
+}
+
+#contact {
+  background: linear-gradient(#fb3 30%, #58a 75%);
+  height: 100%;
+  width: 105%;
+  padding: 20px;
+  padding-top: 5%;
+  box-shadow: 0 0 10px 0 #000000;
+}
+
+#contact h2 {
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    color: black;
+}
+
+#contact div {
+    text-align: center;
+}
+
+#contact i {
+    color: white;
+    background-color: #58a;
+    text-align: center;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 5px solid rgb(205, 209, 215);
+    padding: 20px;
+}
+
+.intro {
+	height: 100%;
+}
 .project {
 	background-color: #0C547D;
 	border-color: #0C547D;;
@@ -151,7 +232,6 @@ h1 {
 	height: 100%;
 	padding: 6px 16px;
     border: 1px solid #446d88;
-    /*background: #58a linear-gradient(#77a0bb, #58a);*/
     border-radius: 4px;
     box-shadow: 0 1px 5px gray;
     color: white;
