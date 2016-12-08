@@ -1,5 +1,5 @@
-
-/*$primary-color: #0C547D;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Patua+One');
+/*$rimary-color: #0C547D;
 $secondary-color: #FFF;
 $tertiary-color: #F15E57;*/
 html {
@@ -28,13 +28,14 @@ body {
 
 h1 {
 	color: #58a;
+	font-family: 'Patua One', cursive;
 }
 
 .project-description-top {
 	background: linear-gradient(#58a, #fb3);
 	border: none;
 	color: linear-gradient(#000000, #FFFAF0);
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
@@ -43,24 +44,43 @@ h1 {
 .summary-holder {
 	background: linear-gradient(#58a, #fb3);
 	color: linear-gradient(#000000, #FFFAF0);
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
 }
 
-.project-description-top h4 {
-	font-family: 'Muli', sans-serif;
+.project-description-top h3 {
+	font-family: 'Patua One', cursive;
  	font-size:24px;
  	font-weight: bold;
  	line-height:150%;
+ 	color: #fb3;
+ 	letter-spacing: 1px;
+}
 
+.h4-outside {
+	font-family: 'Patua One', cursive;
+ 	font-size:20px;
+ 	font-weight: bold;
+ 	line-height:150%;
+ 	color: #fb3;
+ 	letter-spacing: 1px;
+}
+
+.h4-middle {
+	font-family: 'Patua One', cursive;
+ 	font-size:20px;
+ 	font-weight: bold;
+ 	line-height:150%;
+ 	color: #58a;
+ 	letter-spacing: 1px;
 }
 
 .project-description-bottom {
 	background: linear-gradient(#fb3, #58a);
 	color: linear-gradient(	#000000, #FFFAF0);
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
@@ -69,7 +89,7 @@ h1 {
 
 
 .heading h1 {
-	font-family: 'Corben', Georgia, Times, serif;
+	font-family: 'Patua One', cursive;
 	font-size: 40px;
 	line-height: 55px;
 }
@@ -87,7 +107,14 @@ h1 {
 
 .project-images {
 	border: 15px solid hsla(0,0%, 100%, .5);
-	background: #F15E57;
+	background: #fb3;
+	background-clip: padding-box;
+	height: 100%;
+}
+
+.project-images-2 {
+	border: 15px solid hsla(0,0%, 100%, .5);
+	background: #58a;
 	background-clip: padding-box;
 	height: 100%;
 }
@@ -108,7 +135,7 @@ h1 {
 	border-color: #0C547D;
 	border: none;
 	color: #333333;
-	font-family: 'Muli', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	color: white;
 	font-weight:normal;
