@@ -86,14 +86,56 @@ h1 {
  	line-height:150%;
 }
 
-
-
 .heading h1 {
 	font-family: 'Patua One', cursive;
 	font-size: 40px;
 	line-height: 55px;
 }
 
+.proficiency-holder {
+	background: white;
+	color: linear-gradient(#000000, #FFFAF0);
+	font-family: 'Open Sans', sans-serif;
+ 	font-size:18px;
+ 	font-weight:normal;
+ 	line-height:150%;
+ 	height: 100%;
+ 	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+
+.proficiency-holder h2 {
+	font-family: 'Patua One', cursive;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.proficiencies-holder {
+	background: white;
+	text-align: center;
+	height: 100%;
+}
+
+#proficiencies {
+	margin: auto;
+	line-height: 200%;
+	/*border-radius: 50px;*/
+}
+
+#proficiencies i {
+    font-size: 50px;
+    display: inline-block;
+    width: 70px;
+    height: 80px;
+    margin-bottom: 70px;
+    margin-left: -5px;
+    padding: 10px;
+}
+
+.intro {
+	height: 100%;
+}
 .project {
 	background-color: #0C547D;
 	border-color: #0C547D;;
