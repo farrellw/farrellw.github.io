@@ -34,7 +34,7 @@ header .greeting {
 	right: 0;
 	bottom: 0;
 	z-index: 2;
-	background-color: #70C4AF;
+	background-color: #58a;
 	opacity: 0.7;
 	}
 
@@ -42,12 +42,12 @@ header h1 {
 	position: relative;
  	z-index: 2;
 	top: 30%;
-  margin: 0;
-  color: #FFF;
-  font-family: Karla, sans-serif;
-  font-size: 3em;
+  	margin: 0;
+  	color: #FFF;
+  	font-family: Karla, sans-serif;
+  	font-size: 4em;
 	line-height: 1.5;
-	}
+}
 
 header hgroup {
   -webkit-transform: translate(-50%, -50%);
@@ -66,14 +66,14 @@ header hgroup {
 
 header .overlay {
 	z-index: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background:#ccc center no-repeat;
-  background-size: cover;
-   opacity: 0.5;  -webkit-filter: blur(4px);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background:#ccc center no-repeat;
+	background-size: cover;
+	opacity: 0.5;  -webkit-filter: blur(4px);
 }
 
 .heading {
