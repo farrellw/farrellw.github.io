@@ -105,6 +105,9 @@ h1 {
  	font-size:18px;
  	font-weight:normal;
  	line-height:150%;
+ 	height: 100%;
+	text-align: center;
+	margin-top: 10%;
 }
 
 .project-description-top h3 {
@@ -298,12 +301,6 @@ h1 {
     border-radius: 4px;
     box-shadow: 0 1px 5px gray;
     color: white;
-}
-
-.summary-holder {
-	height: 100%;
-	text-align: center;
-	margin-top: 10%;
 }
 
 .nav .nav-link:hover {
