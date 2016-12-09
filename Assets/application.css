@@ -9,30 +9,25 @@ html {
 }
 
 body {
-	height: 100%
+	height: 100%;
+	
 }
 
 .page {
 	height: 100%;
-	/*backgrou*//*nd-color: #0C547D;
+	/*background-color: #0C547D;
 	border-color: #0C547D;*/
 }
-
-/*.intro {
-	height: 100%;
+header {
  	z-index: 2;
   	position: relative;
 	height: 100%;
-  	background: url('images/will-casual.jpg') no-repeat scroll center;
+  	background: url("../images/will-casual.jpg") no-repeat scroll center;
 	background-size: cover;
 	background-blend-mode: soft light;
 }
 
-.background {
-	background: url('images/will-casual.jpg') no-repeat scroll center;
-}
-
-.intro .greeting {
+header .greeting {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -41,29 +36,9 @@ body {
 	z-index: 2;
 	background-color: #70C4AF;
 	opacity: 0.7;
-}*/
+	}
 
-.intro {
- 	z-index: 2;
-  	position: relative;
-	height: 100%;
-  	background: url('images/will-casual.jpg') no-repeat scroll center;
-	background-size: cover;
-	background-blend-mode: soft light;
-}
-
-.greeting {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 2;
-	background-color: #70C4AF;
-	opacity: 0.7;
-}
-
-h1 {
+header h1 {
 	position: relative;
  	z-index: 2;
 	top: 30%;
@@ -72,9 +47,9 @@ h1 {
   font-family: Karla, sans-serif;
   font-size: 3em;
 	line-height: 1.5;
-}
+	}
 
-hgroup {
+header hgroup {
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -89,7 +64,7 @@ hgroup {
 	width: 70%;
 }
 
-.overlay {
+header .overlay {
 	z-index: 0;
   position: absolute;
   top: 0;
@@ -203,7 +178,7 @@ h1 {
 #proficiencies {
 	margin: auto;
 	line-height: 100%;
-	/*border-radius: 50px;*/
+	border-radius: 50px;
 }
 
 #proficiencies i {
