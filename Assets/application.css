@@ -15,8 +15,6 @@ body {
 
 .page {
 	height: 100%;
-	/*background-color: #0C547D;
-	border-color: #0C547D;*/
 }
 header {
  	z-index: 2;
@@ -34,7 +32,7 @@ header .greeting {
 	right: 0;
 	bottom: 0;
 	z-index: 2;
-	background-color: #70C4AF;
+	background-color: #58a;
 	opacity: 0.7;
 	}
 
@@ -42,12 +40,12 @@ header h1 {
 	position: relative;
  	z-index: 2;
 	top: 30%;
-  margin: 0;
-  color: #FFF;
-  font-family: Karla, sans-serif;
-  font-size: 3em;
+  	margin: 0;
+  	color: #FFF;
+  	font-family: Karla, sans-serif;
+  	font-size: 4em;
 	line-height: 1.5;
-	}
+}
 
 header hgroup {
   -webkit-transform: translate(-50%, -50%);
@@ -66,14 +64,14 @@ header hgroup {
 
 header .overlay {
 	z-index: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background:#ccc center no-repeat;
-  background-size: cover;
-   opacity: 0.5;  -webkit-filter: blur(4px);
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background:#ccc center no-repeat;
+	background-size: cover;
+	opacity: 0.5;  -webkit-filter: blur(4px);
 }
 
 .heading {
@@ -200,15 +198,17 @@ h1 {
 
 .contact-holder {
 	height: 100%;
+	background: linear-gradient(#fb3 30%, #58a 75%);
+	box-shadow: 0 0 10px 0 #000000;
 }
 
 #contact {
-  background: linear-gradient(#fb3 30%, #58a 75%);
-  height: 100%;
-  width: 105%;
-  padding: 20px;
-  padding-top: 5%;
-  box-shadow: 0 0 10px 0 #000000;
+	margin-top: 15%;
+	height: 70%;
+	width: 100%;
+	padding: 20px;
+	padding-top: 5%;
+	border: none;
 }
 
 #contact h2 {
@@ -231,8 +231,6 @@ h1 {
     border: 5px solid rgb(205, 209, 215);
     padding: 20px;
 }
-
-
 
 .project {
 	background-color: #0C547D;
@@ -278,18 +276,16 @@ h1 {
 	font-weight:normal;
  	line-height:150%;
 }
-
-.contact {
-	background-color: #F15E57;
-	text-align: center; 
+.navbar-holder {
+	text-align: center;
+	/*background: #58a;*/
 }
+
 .navbar-nav li {
 	text-align: center;
 	height: 100%;
 	padding: 6px 16px;
-    border: 1px solid #446d88;
     border-radius: 4px;
-    box-shadow: 0 1px 5px gray;
     color: white;
     text-shadow: 0 -1px 1px #335166;
     line-height: 1.5;
@@ -298,7 +294,7 @@ h1 {
 .nav a {
     padding: 6px 16px;
     border: 1px solid #446d88;
-    background: #58a linear-gradient(#77a0bb, #58a);
+    background: gray;
     border-radius: 4px;
     box-shadow: 0 1px 5px gray;
     color: white;
@@ -326,7 +322,13 @@ h1 {
 	border-radius: 50px;
 }
 
-.index-nav {
-	margin: auto;
-	text-align: center;
+.arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  margin-left: -20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0yOTMuNzUxLDQ1NS44NjhjLTIwLjE4MSwyMC4xNzktNTMuMTY1LDE5LjkxMy03My42NzMtMC41OTVsMCwwYy0yMC41MDgtMjAuNTA4LTIwLjc3My01My40OTMtMC41OTQtNzMuNjcyICBsMTg5Ljk5OS0xOTBjMjAuMTc4LTIwLjE3OCw1My4xNjQtMTkuOTEzLDczLjY3MiwwLjU5NWwwLDBjMjAuNTA4LDIwLjUwOSwyMC43NzIsNTMuNDkyLDAuNTk1LDczLjY3MUwyOTMuNzUxLDQ1NS44Njh6Ii8+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjIwLjI0OSw0NTUuODY4YzIwLjE4LDIwLjE3OSw1My4xNjQsMTkuOTEzLDczLjY3Mi0wLjU5NWwwLDBjMjAuNTA5LTIwLjUwOCwyMC43NzQtNTMuNDkzLDAuNTk2LTczLjY3MiAgbC0xOTAtMTkwYy0yMC4xNzgtMjAuMTc4LTUzLjE2NC0xOS45MTMtNzMuNjcxLDAuNTk1bDAsMGMtMjAuNTA4LDIwLjUwOS0yMC43NzIsNTMuNDkyLTAuNTk1LDczLjY3MUwyMjAuMjQ5LDQ1NS44Njh6Ii8+DQo8L3N2Zz4=);
+  background-size: contain;
 }
