@@ -42,7 +42,7 @@ header h1 {
 	top: 30%;
   	margin: 0;
   	color: #FFF;
-  	font-family: Karla, sans-serif;
+  	font-family: 'Patua One', cursive;
   	font-size: 4em;
 	line-height: 1.5;
 }
@@ -81,11 +81,6 @@ header .overlay {
 	font-size: 68px; 
 	font-weight: 800; 
 	line-height: 72px;
-}
-
-h1 {
-	color: #58a;
-	font-family: 'Patua One', cursive;
 }
 
 .project-description-top {
@@ -330,9 +325,6 @@ h1 {
   background-size: contain;
 }
 
-.projects-holder {
-	height: 100%;
-}
 .projects-carousel {
 	height: 100%;
 }
@@ -340,15 +332,61 @@ h1 {
 	height: 100%;
 	text-align: center;
 }
-.carousel-inner div {
+
+@media (min-width: 1200px) {
+  .carousel-inner {
+    width: 100%; } }
+@media (min-width: 992px) {
+  .carousel-inner {
+    width: 100%; } }
+@media (min-width: 768px) {
+  .carousel-inner {
+    width: 100%; } }
+.screenshot {
+  margin: 5px auto;
+  width: 500px;
+  height: 300px; }
+
+.project1{
+	background-image: url(../images/sandbox2.png);
+	background-size: contain;
 	margin: auto;
+	margin-top: 15%;
 }
 
-.active img {
+.project2{
+	background-image: url(../images/endcar.jpg);
+	background-size: contain;
 	margin: auto;
-	margin-top: 7.5%;
-	height: 30%;
+	margin-top: 15%;
 }
-/*.project1 {
-	background: url(../images/sandbox.png)
-}*/
+
+.item h1{
+	font-family: 'Patua One', cursive;
+	color: white;
+
+}
+
+.item p{
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+}
+
+.screenshot:hover .links {
+  width: 500px;
+  height: 300px;
+  background: rgba(0, 0, 0, 0.5);
+  display: inline-block;
+  padding-top: 20px; 
+}
+.screenshot:hover .links a {
+    display: inline;
+    vertical-align: middle;
+    color: #FFF; 
+}
+.screenshot:hover .links a:hover {
+    color: #0C547D;
+    text-decoration: none; 
+}
+
+
