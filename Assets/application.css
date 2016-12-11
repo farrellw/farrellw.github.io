@@ -361,15 +361,28 @@ header .overlay {
 	margin-top: 15%;
 }
 
-.item h1{
+.project3{
+	background-image: url(../images/2048.png);
+	background-size: contain;
+	margin: auto;
+	margin-top: 15%;
+}
+
+.item h1 {
 	font-family: 'Patua One', cursive;
 	color: white;
+}
 
+.item h3 {
+	font-family: 'Patua One', cursive;
+	color: white;
+	font-size: 130%
 }
 
 .item p{
 	font-family: 'Open Sans', sans-serif;
 	color: white;
+	font-size: 130%
 }
 
 .screenshot:hover .links {
