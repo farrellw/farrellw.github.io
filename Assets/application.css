@@ -196,7 +196,8 @@ header .overlay {
 
 .contact-holder {
 	height: 100%;
-	background: linear-gradient(#fb3 30%, #58a 75%);
+	background: #fb3;
+	/*background: linear-gradient(#fb3 30%, #58a 75%);*/
 	box-shadow: 0 0 10px 0 #000000;
 }
 
